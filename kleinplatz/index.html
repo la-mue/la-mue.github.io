@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ce que les meilleurs amants font différemment</title>
+<meta name="description" content="Peggy Kleinplatz a interviewé des dizaines de personnes avec une vie sexuelle extraordinaire. Pas les jeunes, beaux, valides qu'on attendrait.">
+<style>
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #FAF6F1;
+  --text: #2D2A26;
+  --text-light: #6B6560;
+  --accent: #8B3A3A;
+  --accent-light: rgba(139, 58, 58, 0.08);
+  --accent-bar: rgba(139, 58, 58, 0.15);
+  --secondary: #5B7065;
+  --serif: 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 56px 0;
+}
+
+section + section {
+  border-top: 1px solid rgba(139, 58, 58, 0.08);
+}
+
+/* ── Typography ── */
+h1 {
+  font-family: var(--serif);
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+h3 {
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 32px 0 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.85rem;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* ── Quality highlights (surligneur) ── */
+.quality {
+  background: rgba(139, 58, 58, 0.10);
+  padding: 1px 4px;
+  border-radius: 2px;
+  font-style: normal;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  margin-bottom: 24px;
+}
+
+/* ── Pull Quotes ── */
+blockquote {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--text);
+  border-left: 3px solid var(--accent);
+  padding: 12px 0 12px 20px;
+  margin: 28px 0;
+}
+
+blockquote.featured {
+  font-size: 1.3rem;
+  line-height: 1.45;
+  padding: 20px 0 20px 24px;
+  margin: 36px 0;
+}
+
+/* ── Story card (Thursday couple) ── */
+.story-card {
+  background: #F3EDE4;
+  border-radius: 4px;
+  padding: 24px 28px;
+  margin: 32px 0;
+}
+
+.story-card p {
+  margin-bottom: 12px;
+}
+
+.story-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Stat callout (d > 1,4) ── */
+.stat-callout {
+  background: var(--accent-light);
+  border-radius: 8px;
+  padding: 24px 28px;
+  margin: 32px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.stat-callout-number {
+  font-family: var(--sans);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.stat-callout-desc {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.stat-callout-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 4px;
+  font-style: italic;
+}
+
+/* ── Question prompts ── */
+.questions {
+  margin: 32px 0;
+}
+
+.question-item {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.5;
+  padding: 16px 0 16px 24px;
+  border-left: 2px solid var(--accent-bar);
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.question-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Dramatic pause (oxygen line) ── */
+.pause {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  margin: 28px 0;
+  color: var(--text-light);
+}
+
+/* ── Reframe callout ── */
+.reframe {
+  background: var(--accent-light);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 28px 0;
+}
+
+.reframe p {
+  margin-bottom: 0;
+}
+
+/* ── Progress: Mobile bar ── */
+.progress-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--accent-bar);
+  z-index: 100;
+}
+
+.progress-mobile-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.1s linear;
+}
+
+/* ── Progress: Desktop sidebar ── */
+.progress-nav {
+  display: none;
+}
+
+@media (min-width: 1080px) {
+  .progress-mobile {
+    display: none;
+  }
+
+  .progress-nav {
+    display: block;
+    position: fixed;
+    left: calc((100vw - 680px) / 2 - 180px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+
+  .progress-nav-track {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 8px 0;
+  }
+
+  .progress-nav-line,
+  .progress-nav-line-fill {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    border-radius: 1px;
+  }
+
+  .progress-nav-line {
+    background: var(--accent-bar);
+  }
+
+  .progress-nav-line-fill {
+    background: var(--accent);
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.15s linear;
+  }
+
+  .progress-nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding-left: 0;
+  }
+
+  .progress-nav-item::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--accent-bar);
+    flex-shrink: 0;
+    transition: border-color 0.3s, background 0.3s;
+    z-index: 1;
+  }
+
+  .progress-nav-item.active::before {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .progress-nav-item.passed::before {
+    background: var(--accent);
+    border-color: var(--accent);
+    opacity: 0.5;
+  }
+
+  .progress-nav-item span {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    color: var(--text-light);
+    opacity: 0.5;
+    transition: opacity 0.3s, color 0.3s;
+    white-space: nowrap;
+  }
+
+  .progress-nav-item.active span {
+    opacity: 1;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .progress-nav-item.passed span {
+    opacity: 0.7;
+  }
+}
+
+/* ── Footer ── */
+.citation {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  padding: 32px 0 48px;
+  border-top: 1px solid rgba(139, 58, 58, 0.08);
+}
+
+.citation a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.citation a:hover {
+  text-decoration: underline;
+}
+
+/* ── Scroll Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay {
+  transition-delay: 0.15s;
+}
+
+/* ── Hero spacing ── */
+.hero {
+  padding-top: 72px;
+  padding-bottom: 56px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  blockquote {
+    font-size: 1.05rem;
+    padding-left: 16px;
+  }
+
+  blockquote.featured {
+    font-size: 1.15rem;
+    padding-left: 20px;
+  }
+
+  .story-card {
+    padding: 20px;
+  }
+
+  .stat-callout {
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+  }
+
+  .stat-callout-number {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 641px) {
+  section {
+    padding: 72px 0;
+  }
+
+  blockquote {
+    margin-left: 8px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Mobile progress bar -->
+<div class="progress-mobile" aria-hidden="true">
+  <div class="progress-mobile-fill"></div>
+</div>
+
+<!-- Desktop sidebar nav -->
+<nav class="progress-nav" aria-label="Sections">
+  <div class="progress-nav-track">
+    <div class="progress-nav-line"></div>
+    <div class="progress-nav-line-fill"></div>
+    <a href="#intro" class="progress-nav-item active" data-section="intro"><span>Intro</span></a>
+    <a href="#sample" class="progress-nav-item" data-section="sample"><span>L'échantillon</span></a>
+    <a href="#trois-facons" class="progress-nav-item" data-section="trois-facons"><span>Trois façons</span></a>
+    <a href="#retournement" class="progress-nav-item" data-section="retournement"><span>Le retournement</span></a>
+    <a href="#chance" class="progress-nav-item" data-section="chance"><span>Pas le hasard</span></a>
+    <a href="#desapprendre" class="progress-nav-item" data-section="desapprendre"><span>Désapprendre</span></a>
+    <a href="#question" class="progress-nav-item" data-section="question"><span>Questions</span></a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ═══ Hero ═══ -->
+  <section class="hero" id="intro">
+    <h1 class="reveal">Ce que les meilleurs amants font&nbsp;différemment</h1>
+
+    <p class="lead reveal">Pendant des décennies, la sexologie a surtout posé une seule question&nbsp;: qu'est-ce qui ne va pas&nbsp;? Comment ramener les couples qui souffrent à un fonctionnement acceptable&nbsp;? C'est utile&hellip; mais c'est viser bas.</p>
+
+    <p class="reveal">Une chercheuse de l'Université d'Ottawa, Peggy Kleinplatz, a posé une question différente. Pas &laquo;&nbsp;comment on répare ce qui va pas&nbsp;?&nbsp;&raquo; mais&nbsp;: &laquo;&nbsp;les gens pour qui c'est extraordinaire, ils font quoi, exactement&nbsp;?&nbsp;&raquo;</p>
+
+    <p class="reveal">Elle a cherché.</p>
+  </section>
+
+  <!-- ═══ Les gens qu'on n'attendait pas ═══ -->
+  <section id="sample">
+    <h2 class="reveal">Les gens qu'on n'attendait pas</h2>
+
+    <p class="reveal">Quand on imagine quelqu'un avec une vie sexuelle exceptionnelle, on pense à quoi&nbsp;? Jeune, en bonne santé, nouveau couple, l'adrénaline de la découverte.</p>
+
+    <p class="reveal">Son échantillon ressemblait pas du tout à ça.</p>
+
+    <div class="story-card reveal reveal-delay">
+      <p>Il y avait un couple d'environ soixante-dix ans qui faisait l'amour une fois par semaine. Sauf que ça commençait le jeudi midi. Ils préparaient une planche apéritif&nbsp;: fromages, charcuterie, légumes, juste de quoi manger léger. Et ils restaient au lit du jeudi soir au lundi matin.</p>
+      <p>Une fois par semaine, oui. Mais trois jours et demi.</p>
+    </div>
+
+    <p class="reveal">Il y avait des gens malades, des gens handicapés, des couples ensemble depuis trente ans. Des hommes, des femmes, des personnes LGBTQ. Des jeunes dans la vingtaine comme des octogénaires.</p>
+
+    <p class="reveal">Et tous décrivaient exactement les mêmes choses. Comme si, à ce niveau d'intensité, les différences de corps, d'âge, de statut s'effaçaient.</p>
+  </section>
+
+  <!-- ═══ Trois façons d'être ensemble ═══ -->
+  <section id="trois-facons">
+    <h2 class="reveal">Trois façons d'être ensemble</h2>
+
+    <p class="reveal">Kleinplatz a identifié huit qualités qui revenaient, sans exception, dans ces récits. Pas des techniques. Pas des positions. Des façons d'être.</p>
+
+    <h3 class="reveal">Être vraiment là</h3>
+
+    <p class="reveal">La première, c'est une <mark class="quality">présence totale</mark>. Pas &laquo;&nbsp;dans la même pièce&nbsp;&raquo;, mais <em>là</em>, corps et esprit absorbés, à un point où rien d'autre n'existe. Ces couples étaient tellement dans le moment qu'une bombe atomique pourrait tomber sans les distraire.</p>
+
+    <p class="reveal">Ça va de pair avec une deuxième qualité&nbsp;: être <mark class="quality">en phase</mark> avec l'autre. Présent en soi et connecté à l'autre, en même temps. Les poètes en parlent, les chercheurs rarement. Ici, c'était pas du romantisme flou. C'était quelque chose de précis, de travaillé.</p>
+
+    <p class="reveal">De cette connexion naît une troisième&nbsp;: une <mark class="quality">intimité érotique profonde</mark>. Pas la mécanique du sexe, quelque chose de plus nu que ça. Le fait de laisser l'autre accéder à son désir, pas seulement à son corps.</p>
+
+    <p class="reveal">Et une quatrième&nbsp;: une <mark class="quality">communication empathique</mark>. Pas seulement verbale. Ces amants se lisaient aussi par le toucher. Kleinplatz le décrit ainsi&nbsp;:</p>
+
+    <blockquote class="featured reveal reveal-delay">
+      &laquo;&nbsp;Je suis là, j'écoute avec mes doigts, j'essaie de sentir ce que tu veux en ce moment.&nbsp;&raquo;
+    </blockquote>
+
+    <p class="reveal">Il y a le toucher mécanique, celui qui &laquo;&nbsp;passe en revue&nbsp;&raquo; un corps comme on passe un chiffon sur un meuble. Et il y a le toucher qui cherche à <em>sentir</em> la personne en dessous. Tout le monde sent la différence. Les amants dont parle Kleinplatz ne font que le deuxième.</p>
+
+    <h3 class="reveal">Se montrer</h3>
+
+    <p class="reveal">La cinquième qualité, c'est l'<mark class="quality">authenticité</mark>. Être soi, sans masque. Ce que Kleinplatz appelle la nudité émotionnelle, pas seulement physique.</p>
+
+    <p class="reveal">Et ça mène à la sixième&nbsp;: la <mark class="quality">vulnérabilité</mark>. Se laisser <em>connaître</em> par l'autre. Pas la fragilité, pas la faiblesse, mais le fait de permettre à quelqu'un d'entrer vraiment. C'est déjà difficile seul devant un miroir. Le faire avec une autre personne, dans un moment d'intimité, c'est autre chose.</p>
+
+    <p class="reveal">On imagine facilement que ces deux qualités s'apprennent par des exercices, des longues conversations, un travail intérieur. Mais dans les interviews, ça ressortait souvent autrement&nbsp;: à travers un geste anodin, une décision soudaine, une petite prise de risque.</p>
+
+    <h3 class="reveal">Oser ensemble</h3>
+
+    <p class="reveal">La septième qualité, c'est exactement ça&nbsp;: la <mark class="quality">prise de risque</mark>. Pas &laquo;&nbsp;essayons un truc nouveau ce soir&nbsp;&raquo; mais quelque chose de plus profond. &laquo;&nbsp;Se tenir la main et sauter de la falaise ensemble.&nbsp;&raquo; Utiliser l'intimité érotique comme terrain de découverte mutuelle, de croissance. S'exposer là où on se montrait pas avant.</p>
+
+    <p class="reveal">Et si toutes ces qualités convergent, une dernière peut apparaître&nbsp;: une <mark class="quality">transcendance</mark>. Des moments qui dépassent l'individuel. Les participants disaient, quel que soit leur rapport à la religion, que ça ressemblait à quelque chose de divin. Pas une technique de plus. Quelque chose qui arrive quand tout le reste est là.</p>
+  </section>
+
+  <!-- ═══ Le retournement ═══ -->
+  <section id="retournement">
+    <h2 class="reveal">Le retournement&nbsp;: le corps n'est pas le&nbsp;problème</h2>
+
+    <p class="reveal">En début d'interview, Kleinplatz demandait à chaque participant où ils en étaient physiquement. Presque tout le monde se disait en bonne santé, valide.</p>
+
+    <p class="reveal">Au milieu d'un entretien, un homme demande à s'arrêter. Il peut plus respirer. L'équipe panique. Il revient. Il avait juste besoin d'aller chercher son oxygène.</p>
+
+    <p class="pause reveal reveal-delay">Son oxygène.</p>
+
+    <p class="reveal">&laquo;&nbsp;Mais vous avez dit que vous étiez en bonne santé.&nbsp;&raquo;</p>
+
+    <p class="reveal">&laquo;&nbsp;Je le suis. Avec mon oxygène, je respire très bien.&nbsp;&raquo;</p>
+
+    <p class="reveal">Il avait une BPCO, une maladie pulmonaire chronique.</p>
+
+    <blockquote class="featured reveal reveal-delay">
+      &laquo;&nbsp;Et alors&nbsp;? Ça veut juste dire que j'ai dû trouver de nouvelles façons d'être sexuel. S'il y a un handicap qui nuit à l'épanouissement sexuel, c'est un <em>handicap de l'imagination</em>, pas du corps. Il y a toujours de nouvelles façons, pour les gens prêts à être créatifs.&nbsp;&raquo;
+    </blockquote>
+
+    <p class="reveal">Et c'est là que ça devient intéressant. Les personnes âgées, handicapées, malades chroniques décrivaient souvent une vie sexuelle <em>meilleure</em> que celle des jeunes adultes valides. Parce qu'elles avaient été forcées de se réinventer. De communiquer. D'abandonner les scripts. Les valides n'y avaient jamais été forcés&hellip; alors ils l'avaient rarement fait.</p>
+
+    <div class="reframe reveal">
+      <p>Le plus grand obstacle à du sexe extraordinaire n'est pas le corps. C'est l'idée qu'on se fait de ce que le sexe devrait être.</p>
+    </div>
+  </section>
+
+  <!-- ═══ Ce n'est pas une question de chance ═══ -->
+  <section id="chance">
+    <h2 class="reveal">Ce n'est pas une question de&nbsp;chance</h2>
+
+    <p class="reveal">À la fin des entretiens, Kleinplatz posait une dernière question&nbsp;: est-ce que vous êtes tombés là-dessus par chance, ou vous l'avez construit&nbsp;?</p>
+
+    <p class="reveal">Sans exception, les participants ont <em>ri</em>.</p>
+
+    <blockquote class="reveal reveal-delay">
+      &laquo;&nbsp;Construit. Avec un effort considérable, une vraie dévotion, une vraie intention.&nbsp;&raquo;
+    </blockquote>
+
+    <p class="reveal">Personne n'était &laquo;&nbsp;naturellement doué&nbsp;&raquo;. Personne n'a dit que ça arrivait tout seul. C'est l'inverse du script dominant, celui des magazines et des films, où du sexe extraordinaire c'est une question de chimie, de coup de chance, de compatibilité mystérieuse.</p>
+
+    <p class="reveal">Ce que Kleinplatz a trouvé, ça ressemble plutôt à un artisanat, à du jardinage. Quelque chose qu'on cultive, qu'on fait grandir chaque jour par amour.</p>
+
+    <div class="reframe reveal reveal-delay">
+      <p>Et ça, la recherche l'a confirmé autrement&nbsp;: son équipe a développé une thérapie de groupe pour des couples en difficulté sexuelle, construite sur ces huit qualités. Les résultats, six mois plus tard&nbsp;: des améliorations larges et durables sur la satisfaction, l'intensité, la créativité, l'ouverture émotionnelle. Pas juste une théorie. Une approche qui marche, et qui tient.</p>
+    </div>
+  </section>
+
+  <!-- ═══ Désapprendre ═══ -->
+  <section id="desapprendre">
+    <h2 class="reveal">Désapprendre</h2>
+
+    <p class="reveal">Et quand on leur demandait par où ils avaient commencé, tous les participants avaient la même réponse&nbsp;:</p>
+
+    <blockquote class="featured reveal reveal-delay">
+      &laquo;&nbsp;On a dû désapprendre tout ce qu'on avait appris sur le sexe.&nbsp;&raquo;
+    </blockquote>
+
+    <p class="reveal">Pas acquérir de nouvelles compétences. Pas collectionner des techniques comme des Pokémon. <em>Défaire</em> ce qu'on croyait savoir. Les mythes, les stéréotypes, les scripts hérités du porno, de la culture, de l'éducation ou de son absence. Repartir de zéro pour découvrir ce qui marche pour ces deux personnes-là, pas pour la version généralisée des magazines.</p>
+
+    <p class="reveal">C'est pas &laquo;&nbsp;travaillez plus fort sur votre couple&nbsp;&raquo;. C'est plus bizarre que ça, et plus libérateur&nbsp;: commencer par ce qu'on enlève.</p>
+  </section>
+
+  <!-- ═══ Trois questions fertiles ═══ -->
+  <section id="question">
+    <h2 class="reveal">Trois questions qui peuvent être&nbsp;fertiles</h2>
+
+    <p class="reveal">Pas des exercices. Juste trois graines, si vous en avez envie&nbsp;:</p>
+
+    <div class="questions reveal reveal-delay">
+      <div class="question-item">
+        &laquo;&nbsp;C'est quoi pour toi un moment où on était vraiment là, tous les deux&nbsp;?&nbsp;&raquo;
+      </div>
+      <div class="question-item">
+        &laquo;&nbsp;Qu'est-ce que t'as désappris sur le sexe depuis qu'on est ensemble&nbsp;?&nbsp;&raquo;
+      </div>
+      <div class="question-item">
+        &laquo;&nbsp;Qu'est-ce qu'on a jamais osé se dire&nbsp;?&nbsp;&raquo;
+      </div>
+    </div>
+
+    <p class="reveal">Kleinplatz a posé sa question à des gens qu'on n'aurait pas attendus dans cette étude. Et ils lui ont dit que le chemin vers du sexe extraordinaire ne ressemble pas à une accumulation. Pas plus d'ouverture, pas plus de techniques, pas plus de tout.</p>
+
+    <p class="reveal">C'est plutôt du jardinage, et même un élaguage. Enlever, tout doucement, les couches de ce qu'on croit que le sexe devrait être, pour voir ce qu'il peut être, et le faire grandir à votre façon, ensemble.</p>
+  </section>
+
+  <!-- ═══ Citation ═══ -->
+  <footer class="citation reveal">
+    D'après <a href="https://doi.org/10.1177/1066480706294126" target="_blank" rel="noopener">Kleinplatz &amp;&nbsp;Ménard&nbsp;(2007)</a>, <em>The Family Journal</em>&nbsp;; Kleinplatz et al. (2009), <em>Canadian Journal of Human Sexuality</em>, 18(1&ndash;2), 1&ndash;13&nbsp;; et <a href="https://doi.org/10.1016/j.jsxm.2020.02.012" target="_blank" rel="noopener">Kleinplatz et al.&nbsp;(2020)</a>, <em>Journal of Sexual Medicine</em>. Université d'Ottawa. Citations traduites de l'anglais.
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  // ── Scroll reveal ──
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    for (var i = 0; i < els.length; i++) els[i].classList.add('visible');
+  } else {
+    var revealObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function (el) { revealObs.observe(el); });
+  }
+
+  // ── Progress tracking ──
+  var mobileFill = document.querySelector('.progress-mobile-fill');
+  var navItems = document.querySelectorAll('.progress-nav-item');
+  var navLineFill = document.querySelector('.progress-nav-line-fill');
+  var trackedIds = ['intro', 'sample', 'trois-facons', 'retournement', 'chance', 'desapprendre', 'question'];
+  var sections = trackedIds.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      requestAnimationFrame(updateProgress);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  function updateProgress() {
+    ticking = false;
+    var scrollY = window.scrollY;
+    var docH = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docH > 0 ? Math.min(scrollY / docH, 1) : 0;
+
+    // Mobile bar
+    mobileFill.style.width = (pct * 100) + '%';
+
+    // Force-reveal everything when near bottom (within 100px or 90%+)
+    if (pct > 0.9 || scrollY + window.innerHeight >= document.documentElement.scrollHeight - 100) {
+      document.querySelectorAll('.reveal:not(.visible)').forEach(function (el) {
+        el.classList.add('visible');
+      });
+    }
+
+    // Desktop nav: find current section
+    var currentIdx = 0;
+    var viewMid = scrollY + window.innerHeight * 0.35;
+    for (var i = sections.length - 1; i >= 0; i--) {
+      if (sections[i].offsetTop <= viewMid) { currentIdx = i; break; }
+    }
+
+    navItems.forEach(function (item, idx) {
+      item.classList.toggle('active', idx === currentIdx);
+      item.classList.toggle('passed', idx < currentIdx);
+    });
+
+    // Fill line proportionally
+    if (navLineFill && navItems.length > 1) {
+      var linePct = currentIdx / (navItems.length - 1);
+      navLineFill.style.transform = 'scaleY(' + linePct + ')';
+    }
+  }
+
+  updateProgress();
+})();
+</script>
+
+</body>
+</html>

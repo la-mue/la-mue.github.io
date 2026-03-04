@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ce que 300 hommes ont dit sur le besoin de se sentir désiré</title>
+<meta name="description" content="Des chercheurs ont posé une question simple à 300 hommes en couple. La réponse n'était pas celle qu'on attendait.">
+<style>
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #FAF6F1;
+  --text: #2D2A26;
+  --text-light: #6B6560;
+  --accent: #8B3A3A;
+  --accent-light: rgba(139, 58, 58, 0.08);
+  --accent-bar: rgba(139, 58, 58, 0.15);
+  --secondary: #5B7065;
+  --serif: 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 56px 0;
+}
+
+section + section {
+  border-top: 1px solid rgba(139, 58, 58, 0.08);
+}
+
+/* ── Typography ── */
+h1 {
+  font-family: var(--serif);
+  font-size: 1.7rem;
+  line-height: 1.3;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-family: var(--sans);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: var(--text-light);
+}
+
+.punchline {
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 24px 0;
+}
+
+/* ── Pull Quotes ── */
+blockquote {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  font-style: italic;
+  color: var(--text);
+  border-left: 3px solid var(--accent);
+  padding: 12px 0 12px 20px;
+  margin: 28px 0;
+}
+
+blockquote.featured {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  padding: 20px 0 20px 24px;
+  margin: 36px 0;
+}
+
+/* ── Reframe callout ── */
+.reframe {
+  background: var(--accent-light);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 28px 0;
+}
+
+.reframe p {
+  margin-bottom: 0;
+}
+
+/* ── Signal blocks ── */
+.signal {
+  margin-bottom: 36px;
+}
+
+.signal:last-child {
+  margin-bottom: 0;
+}
+
+.signal-label {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* ── Action cards ── */
+.action-card {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.action-card:last-child {
+  margin-bottom: 0;
+}
+
+.action-card .card-label {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+/* ── Charts ── */
+
+/* Stacked stat lines */
+.stat-stack {
+  padding: 8px 0;
+}
+
+.stat-row {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.stat-row + .stat-row {
+  border-top: 1px solid rgba(139, 58, 58, 0.06);
+}
+
+.stat-number {
+  font-family: var(--sans);
+  font-weight: 700;
+  flex-shrink: 0;
+  min-width: 4.5ch;
+  text-align: right;
+}
+
+.stat-desc {
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.stat-row--hero .stat-number {
+  font-size: 2.8rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.stat-row--mid .stat-number {
+  font-size: 1.6rem;
+  color: var(--text-light);
+  line-height: 1;
+}
+
+.stat-row--mid .stat-desc {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.stat-row--zero .stat-number {
+  font-size: 2.2rem;
+  color: var(--text);
+  line-height: 1;
+}
+
+.stat-footer {
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+/* Horizontal bar chart */
+.chart-bars {
+  margin: 32px 0;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.bar-row:last-child {
+  margin-bottom: 0;
+}
+
+.bar-label {
+  flex: 0 0 160px;
+  font-size: 0.9rem;
+  color: var(--text);
+  padding-right: 12px;
+  text-align: right;
+  line-height: 1.3;
+}
+
+.bar-track {
+  flex: 1;
+  height: 28px;
+  background: var(--accent-bar);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  width: 0;
+  transition: width 0.8s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  min-width: 0;
+}
+
+.bar-fill.animated {
+  /* width set via inline style */
+}
+
+.bar-value {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+}
+
+/* When bar is too narrow for white text */
+.bar-value-outside {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-left: 8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.chart-annotation {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--text-light);
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* ── Progress: Mobile bar ── */
+.progress-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--accent-bar);
+  z-index: 100;
+}
+
+.progress-mobile-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.1s linear;
+}
+
+/* ── Progress: Desktop sidebar ── */
+.progress-nav {
+  display: none;
+}
+
+@media (min-width: 1080px) {
+  .progress-mobile {
+    display: none;
+  }
+
+  .progress-nav {
+    display: block;
+    position: fixed;
+    left: calc((100vw - 680px) / 2 - 180px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+
+  .progress-nav-track {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 8px 0;
+  }
+
+  .progress-nav-line,
+  .progress-nav-line-fill {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    border-radius: 1px;
+  }
+
+  .progress-nav-line {
+    background: var(--accent-bar);
+  }
+
+  .progress-nav-line-fill {
+    background: var(--accent);
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.15s linear;
+  }
+
+  .progress-nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding-left: 0;
+  }
+
+  .progress-nav-item::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--bg);
+    border: 2px solid var(--accent-bar);
+    flex-shrink: 0;
+    transition: border-color 0.3s, background 0.3s;
+    z-index: 1;
+  }
+
+  .progress-nav-item.active::before {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .progress-nav-item.passed::before {
+    background: var(--accent);
+    border-color: var(--accent);
+    opacity: 0.5;
+  }
+
+  .progress-nav-item span {
+    font-family: var(--sans);
+    font-size: 0.75rem;
+    color: var(--text-light);
+    opacity: 0.5;
+    transition: opacity 0.3s, color 0.3s;
+    white-space: nowrap;
+  }
+
+  .progress-nav-item.active span {
+    opacity: 1;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .progress-nav-item.passed span {
+    opacity: 0.7;
+  }
+}
+
+/* ── Footer ── */
+.citation {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  padding: 32px 0 48px;
+  border-top: 1px solid rgba(139, 58, 58, 0.08);
+}
+
+.citation a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.citation a:hover {
+  text-decoration: underline;
+}
+
+/* ── Scroll Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay {
+  transition-delay: 0.15s;
+}
+
+/* ── Hero spacing ── */
+.hero {
+  padding-top: 72px;
+  padding-bottom: 56px;
+}
+
+.hero .stinger {
+  margin-top: 24px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  blockquote {
+    font-size: 1.05rem;
+    padding-left: 16px;
+  }
+
+  blockquote.featured {
+    font-size: 1.15rem;
+    padding-left: 20px;
+  }
+
+  .bar-track {
+    height: 24px;
+  }
+
+  .stat-row {
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+  }
+
+  .stat-number {
+    text-align: left;
+  }
+
+  .stat-row--hero .stat-number {
+    font-size: 2.4rem;
+  }
+
+  .stat-row--zero .stat-number {
+    font-size: 2rem;
+  }
+
+  .bar-label {
+    flex: 0 0 120px;
+    font-size: 0.8rem;
+  }
+
+  .action-card {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 641px) {
+  section {
+    padding: 72px 0;
+  }
+
+  blockquote {
+    margin-left: 8px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Mobile progress bar -->
+<div class="progress-mobile" aria-hidden="true">
+  <div class="progress-mobile-fill"></div>
+</div>
+
+<!-- Desktop sidebar nav -->
+<nav class="progress-nav" aria-label="Sections">
+  <div class="progress-nav-track">
+    <div class="progress-nav-line"></div>
+    <div class="progress-nav-line-fill"></div>
+    <a href="#intro" class="progress-nav-item active" data-section="intro"><span>Intro</span></a>
+    <a href="#quantite" class="progress-nav-item" data-section="quantite"><span>Le ressenti</span></a>
+    <a href="#signaux" class="progress-nav-item" data-section="signaux"><span>Les signaux</span></a>
+    <a href="#cliche" class="progress-nav-item" data-section="cliche"><span>Le cliché</span></a>
+    <a href="#pourquoi" class="progress-nav-item" data-section="pourquoi"><span>Pourquoi</span></a>
+    <a href="#essayer" class="progress-nav-item" data-section="essayer"><span>À essayer</span></a>
+    <a href="#essentiel" class="progress-nav-item" data-section="essentiel"><span>L'essentiel</span></a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- ═══ Hero ═══ -->
+  <section class="hero" id="intro">
+    <h1 class="reveal">Ce que 300&nbsp;hommes ont dit sur le besoin de se sentir désiré</h1>
+
+    <p class="lead reveal">(et pourquoi ça vous concerne tous les deux)</p>
+
+    <p class="reveal">Des chercheurs ont posé une question simple à 300&nbsp;hommes en couple&nbsp;: qu'est-ce qui rend votre vie sexuelle satisfaisante&nbsp;? La réponse n'était pas celle qu'on attendait. Pas la fréquence. Pas la variété. Pas la performance.</p>
+
+    <p class="punchline reveal"><strong>Se sentir désiré.</strong></p>
+
+    <p class="reveal">Pas vouloir plus de sexe. Vouloir se sentir <em>voulu</em>.</p>
+
+    <blockquote class="featured reveal reveal-delay">
+      &laquo;&nbsp;C'est de loin le facteur le plus important dans ma satisfaction sexuelle.&nbsp;&raquo;
+    </blockquote>
+
+    <blockquote class="reveal reveal-delay">
+      &laquo;&nbsp;C'est aussi vital que manger ou dormir.&nbsp;&raquo;
+    </blockquote>
+
+    <p class="stinger reveal">La plupart de ces hommes ne l'avaient jamais dit à voix haute. Ni à leur partenaire, ni à leurs amis. À personne.</p>
+  </section>
+
+  <!-- ═══ Pas une question de quantité ═══ -->
+  <section id="quantite">
+    <h2 class="reveal">Pas une question de quantité</h2>
+
+    <p class="reveal">Les couples se disputent souvent sur la fréquence ou sur des actes particuliers. Mais ce que ces hommes décrivent, c'est autre chose&nbsp;: un <em>ressenti</em>. La différence entre un &laquo;&nbsp;si tu veux&nbsp;&raquo; et un &laquo;&nbsp;viens là&nbsp;&raquo;, même si le &laquo;&nbsp;viens là&nbsp;&raquo; arrive moins souvent.</p>
+
+    <blockquote class="reveal reveal-delay">
+      &laquo;&nbsp;Je peux arriver plein de désir, mais au moindre signe qu'elle est pas vraiment là, que c'est par devoir, mon désir se coupe net.&nbsp;&raquo;
+    </blockquote>
+
+    <p class="reveal">Les hommes le sentent. Et quand le sexe ressemble à une obligation plutôt qu'à une envie, ça peut être plus solitaire que pas de sexe du tout.</p>
+
+    <div class="reframe reveal">
+      <p>La satisfaction, c'est pas une question de fréquence. C'est une question de <em>signal</em>. Des petits signes, vrais, qui disent &laquo;&nbsp;je te veux ici&nbsp;&raquo;.</p>
+    </div>
+  </section>
+
+  <!-- ═══ Chart 1: Stacked stats ═══ -->
+  <section id="chiffres">
+    <div class="stat-stack reveal">
+      <div class="stat-row stat-row--hero">
+        <span class="stat-number">94,6%</span>
+        <span class="stat-desc">disent que c'est important à essentiel.</span>
+      </div>
+      <div class="stat-row stat-row--mid">
+        <span class="stat-number">5,4%</span>
+        <span class="stat-desc">disent &laquo;&nbsp;pas critique, mais 7&nbsp;sur&nbsp;10&nbsp;&raquo;.</span>
+      </div>
+      <div class="stat-row stat-row--zero">
+        <span class="stat-number">0%</span>
+        <span class="stat-desc">disent que ça compte pas.</span>
+      </div>
+      <p class="stat-footer">Sur 239&nbsp;réponses. Aucun zéro.</p>
+    </div>
+  </section>
+
+  <!-- ═══ À quoi ressemblent ces signaux ═══ -->
+  <section id="signaux">
+    <h2 class="reveal">À quoi ressemblent ces signaux</h2>
+
+    <p class="reveal">On a trouvé cinq façons dont les hommes se sentent désirés&nbsp;; et aucune ne demande de grand geste.</p>
+
+    <!-- Chart 2: 5 signals bars -->
+    <div class="chart-bars reveal" data-chart="bars-signals">
+      <div class="bar-row">
+        <span class="bar-label">Les mots</span>
+        <div class="bar-track"><div class="bar-fill" data-width="85%"><span class="bar-value">41%</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Le toucher romantique</span>
+        <div class="bar-track"><div class="bar-fill" data-width="70%"><span class="bar-value">34%</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">L'initiation sexuelle</span>
+        <div class="bar-track"><div class="bar-fill" data-width="58%"><span class="bar-value">28%</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">L'enthousiasme pendant le sexe</span>
+        <div class="bar-track"><div class="bar-fill" data-width="39%"></div></div>
+        <span class="bar-value-outside">19%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Le flirt</span>
+        <div class="bar-track"><div class="bar-fill" data-width="29%"></div></div>
+        <span class="bar-value-outside">14%</span>
+      </div>
+    </div>
+    <p class="chart-annotation reveal">Les gestes les plus cités ne sont pas sexuels.</p>
+
+    <!-- Signal 1: Un mot -->
+    <div class="signal reveal">
+      <p class="signal-label">Un mot.</p>
+      <p>Un compliment. Un texto coquin. Un des gars interviewés a répondu&nbsp;:</p>
+      <blockquote class="featured reveal-delay">
+        &laquo;&nbsp;Je me sens un peu bête d'écrire ça, mais elle m'appelle son &ldquo;bel homme&rdquo;. &ldquo;Salut, mon bel homme&rdquo;, elle dit quand je suis torse nu dans le salon, ou quand elle passe pendant que je m'habille. Personne m'avait jamais appelé comme ça. Elle le dit si naturellement que ça me rend heureux.&nbsp;&raquo;
+      </blockquote>
+    </div>
+
+    <!-- Signal 2: Un regard -->
+    <div class="signal reveal">
+      <p class="signal-label">Un regard.</p>
+      <p>&laquo;&nbsp;Il y a ce regard que ma partenaire a parfois dans les yeux, et je sais qu'elle a des idées derrière la tête.&nbsp;&raquo; Plusieurs hommes décrivent <em>ce regard-là</em> comme plus fort que n'importe quel geste.</p>
+    </div>
+
+    <!-- Signal 3: Un contact -->
+    <div class="signal reveal">
+      <p class="signal-label">Un contact.</p>
+      <p>Pas un préliminaire, juste un contact. Une main qui se pose en passant, un bras qu'on frôle, un corps qui se rapproche sur le canapé. Du toucher qui dit &laquo;&nbsp;j'aime être près de toi&nbsp;&raquo;, sans que ça doive mener quelque part.</p>
+      <blockquote class="reveal-delay">
+        &laquo;&nbsp;Intéressez-vous au reste de mon corps. Je suis pas un pénis sur pattes.&nbsp;&raquo;
+      </blockquote>
+    </div>
+
+    <!-- Signal 4: Un premier pas -->
+    <div class="signal reveal">
+      <p class="signal-label">Un premier pas.</p>
+      <p>Initier. Pas attendre qu'on demande. Près de la moitié des hommes disent que ce qui les ferait se sentir le plus désirés, c'est que leur partenaire fasse le premier pas. Même juste de temps en temps.</p>
+      <blockquote class="reveal-delay">
+        &laquo;&nbsp;Initier… j'ai souvent l'impression d'être le seul à poursuivre. À force je me sens usé.&nbsp;&raquo;
+      </blockquote>
+    </div>
+
+    <!-- Signal 5: Une présence -->
+    <div class="signal reveal">
+      <p class="signal-label">Une présence.</p>
+      <p>Être vraiment <em>là</em> pendant l'amour. Pas dans les gestes automatiques&nbsp;; dans la rencontre.</p>
+      <blockquote class="featured reveal-delay">
+        &laquo;&nbsp;Se donner à moi. Je veux pas dire sexuellement. Quand on se retrouve et qu'on oublie le reste, qu'on efface le monde, les distractions. Partager ce qu'on ressent l'un pour l'autre, sans rien d'autre. Laisser la chimie opérer.&nbsp;&raquo;
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ═══ L'autre cliché ═══ -->
+  <section id="cliche">
+    <h2 class="reveal">L'autre cliché&nbsp;: les hommes sont &laquo;&nbsp;toujours prêts&nbsp;&raquo;</h2>
+
+    <p class="reveal">Surprise, y compris pour les chercheurs&nbsp;: beaucoup d'hommes décrivent leur désir comme <em>réactif</em>. Pas un moteur qui tourne en permanence, plutôt quelque chose qui s'éveille quand ils se sentent désirés. Un regard, un contact, un mot, et <em>alors</em> le désir arrive.</p>
+
+    <p class="reveal">Ça change la perspective pour les deux. Lui n'est pas &laquo;&nbsp;en panne&nbsp;&raquo; s'il a besoin d'une étincelle. Et elle a plus d'influence sur son désir qu'aucun des deux ne le soupçonne&nbsp;; pas en jouant une performance, simplement avec de petits signaux sincères qui disent <em>je te veux</em>.</p>
+  </section>
+
+  <!-- ═══ Pourquoi c'est compliqué ═══ -->
+  <section id="pourquoi">
+    <h2 class="reveal">Pourquoi c'est compliqué (pour tout le monde)</h2>
+
+    <p class="reveal">La culture apprend aux hommes à poursuivre, aux femmes à être poursuivies. Quand un homme veut se sentir désiré, il bute contre un script qui dit qu'il devrait pas en avoir besoin. Quand une femme envisage d'être plus directe, elle bute contre un script qui dit qu'une fille bien devrait pas faire ça.</p>
+
+    <p class="reveal">Chacun veut quelque chose que l'autre aimerait donner. Chacun est retenu par des règles qu'aucun des deux n'a écrites.</p>
+
+    <p class="reveal">Un homme l'a bien résumé&nbsp;:</p>
+
+    <blockquote class="featured reveal reveal-delay">
+      &laquo;&nbsp;Quand ma copine est sexuellement directe, quand elle montre clairement qu'elle a vraiment envie de coucher avec moi, je sais qu'elle doit vraiment me vouloir, parce que c'était assez fort pour dépasser son conditionnement social.&nbsp;&raquo;
+    </blockquote>
+
+    <p class="reveal">Il lui demande pas de jouer un rôle. Il dit&nbsp;: <em>quand tu dépasses cette barrière, je le sens. Et ça compte énormément pour moi.</em></p>
+  </section>
+
+  <!-- ═══ Chart 3: Ce que les hommes aimeraient en plus ═══ -->
+  <section id="en-plus">
+    <h2 class="reveal">Ce que les hommes aimeraient en&nbsp;plus</h2>
+
+    <div class="chart-bars reveal" data-chart="bars-more">
+      <div class="bar-row">
+        <span class="bar-label">Qu'elle prenne les devants</span>
+        <div class="bar-track"><div class="bar-fill" data-width="85%"><span class="bar-value">49%</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Plus de flirt</span>
+        <div class="bar-track"><div class="bar-fill" data-width="33%"></div></div>
+        <span class="bar-value-outside">19%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Plus de romantisme</span>
+        <div class="bar-track"><div class="bar-fill" data-width="31%"></div></div>
+        <span class="bar-value-outside">18%</span>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">Plus d'intérêt sexuel</span>
+        <div class="bar-track"><div class="bar-fill" data-width="24%"></div></div>
+        <span class="bar-value-outside">14%</span>
+      </div>
+    </div>
+    <p class="chart-annotation reveal">Pas une seule bonne réponse. Plein de portes d'entrée.</p>
+  </section>
+
+  <!-- ═══ Un petit geste à essayer ═══ -->
+  <section id="essayer">
+    <h2 class="reveal">Un petit geste à essayer</h2>
+
+    <p class="reveal">Un seul. Ce soir, ou cette semaine.</p>
+
+    <div class="action-card reveal">
+      <p class="card-label">Si c'est toi qui initie d'habitude</p>
+      <p>Dis à ton partenaire à quoi ressemble &laquo;&nbsp;me sentir voulu&nbsp;&raquo; <em>pour toi</em>. Sois précis. Pas &laquo;&nbsp;j'aimerais que tu me désires plus&nbsp;&raquo;, c'est flou et ça peut sonner comme un reproche. Plutôt&nbsp;: <em>&laquo;&nbsp;Quand tu me touches le bras, m'envoies ce texto, me regardes comme ça, je me sens vraiment désiré. Ça compte plus que je l'ai jamais dit.&nbsp;&raquo;</em></p>
+    </div>
+
+    <div class="action-card reveal">
+      <p class="card-label">Si c'est toi qui attend d'habitude</p>
+      <p>Pas besoin de jouer un rôle ou de devenir quelqu'un d'autre. Un effleurement. Un regard. Un &laquo;&nbsp;viens là&nbsp;&raquo;. Un message pour dire qu'on pensait à l'autre. Quelque chose de petit, de vrai, à ta façon. Pas besoin que ça mène au sexe. Ça dit juste&nbsp;: <em>je te vois et je te veux là</em>.</p>
+    </div>
+
+    <div class="action-card reveal">
+      <p class="card-label">À deux</p>
+      <p>Demandez-vous l'un à l'autre&nbsp;: <em>&laquo;&nbsp;Quand est-ce que tu te sens le plus désiré&middot;e par moi&nbsp;?&nbsp;&raquo;</em> Vous pourriez être surpris par la différence de vos réponses. Et par la simplicité des possibilités que cette discussion ouvre.</p>
+    </div>
+  </section>
+
+  <!-- ═══ L'essentiel ═══ -->
+  <section id="essentiel">
+    <h2 class="reveal">L'essentiel</h2>
+
+    <p class="reveal">Pour s'épanouir sexuellement dans un couple, c'est pas à un seul des deux de faire plus. C'est une découverte à faire ensemble&nbsp;: ce que &laquo;&nbsp;se sentir désiré&nbsp;&raquo; veut vraiment dire pour chacun. Pas un programme ou une liste à cocher, plutôt une conversation, qui peut commencer tout doucement.</p>
+
+    <p class="reveal">Les hommes de cette étude demandaient pas <em>plus</em>. Ils demandaient à être <em>vus</em>, comme quelqu'un qui mérite d'être désiré, pas seulement comme quelqu'un qui désire.</p>
+
+    <p class="punchline reveal">Et ça vaut le coup d'en parler ensemble.</p>
+  </section>
+
+  <!-- ═══ Citation ═══ -->
+  <footer class="citation reveal">
+    D'après <a href="https://doi.org/10.1080/0092623X.2021.1888830" target="_blank" rel="noopener">Murray &amp; Brotto, 2021</a>, <em>Journal of Sex &amp; Marital Therapy</em>. 300&nbsp;hommes hétérosexuels en couple, 18&ndash;65&nbsp;ans. Citations traduites de l'anglais.
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  // ── Scroll reveal ──
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    for (var i = 0; i < els.length; i++) els[i].classList.add('visible');
+    animateCharts();
+  } else {
+    var revealObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObs.unobserve(entry.target);
+          if (entry.target.hasAttribute('data-chart')) animateChart(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(function (el) { revealObs.observe(el); });
+  }
+
+  function animateChart(container) {
+    var bars = container.querySelectorAll('.bar-fill');
+    bars.forEach(function (bar, i) {
+      setTimeout(function () { bar.style.width = bar.getAttribute('data-width'); }, 100 + i * 120);
+    });
+  }
+  function animateCharts() {
+    document.querySelectorAll('[data-chart]').forEach(animateChart);
+  }
+
+  // ── Progress tracking ──
+  var mobileFill = document.querySelector('.progress-mobile-fill');
+  var navItems = document.querySelectorAll('.progress-nav-item');
+  var navLineFill = document.querySelector('.progress-nav-line-fill');
+  var trackedIds = ['intro', 'quantite', 'signaux', 'cliche', 'pourquoi', 'essayer', 'essentiel'];
+  var sections = trackedIds.map(function (id) { return document.getElementById(id); }).filter(Boolean);
+
+  var ticking = false;
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      requestAnimationFrame(updateProgress);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  function updateProgress() {
+    ticking = false;
+    var scrollY = window.scrollY;
+    var docH = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docH > 0 ? Math.min(scrollY / docH, 1) : 0;
+
+    // Mobile bar
+    mobileFill.style.width = (pct * 100) + '%';
+
+    // Force-reveal everything when near bottom
+    if (pct > 0.95) {
+      document.querySelectorAll('.reveal:not(.visible)').forEach(function (el) {
+        el.classList.add('visible');
+      });
+    }
+
+    // Desktop nav: find current section
+    var currentIdx = 0;
+    var viewMid = scrollY + window.innerHeight * 0.35;
+    for (var i = sections.length - 1; i >= 0; i--) {
+      if (sections[i].offsetTop <= viewMid) { currentIdx = i; break; }
+    }
+
+    navItems.forEach(function (item, idx) {
+      item.classList.toggle('active', idx === currentIdx);
+      item.classList.toggle('passed', idx < currentIdx);
+    });
+
+    // Fill line proportionally
+    if (navLineFill && navItems.length > 1) {
+      var linePct = currentIdx / (navItems.length - 1);
+      navLineFill.style.transform = 'scaleY(' + linePct + ')';
+    }
+  }
+
+  updateProgress();
+})();
+</script>
+
+</body>
+</html>
